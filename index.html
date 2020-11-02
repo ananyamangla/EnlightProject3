@@ -1,0 +1,59 @@
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <title> 
+       Capstone Project
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+
+<body>
+<div class="grid"> 
+  <header class="grid_header">
+    <h3><b>Enlight Capstone Project</b></h3>
+     <a href="https://www.instagram.com/ananyaamanglaa/"> <i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x"></i></a>
+	</header>
+
+<main class="grid_main">
+    <p><b>Generate and Draw!!</b></p>
+    <h5> Generate a random word, select a color and Draw anything!</h5>
+    <FORM NAME="WordForm">  
+    <INPUT TYPE=TEXT NAME="WordBox" id="wordbox"><BR>
+    <INPUT TYPE=BUTTON VALUE="Generate" onClick="PickRandomWord(document.WordForm);" id="button">
+    <input id="hex" placeholder="Enter Hex Color ID"></input>
+  <button onclick="javascript:clearArea();return false;">Clear</button>
+  <input id="linewidth" placeholder="Brush Size"></input>
+  <canvas id="draw"></canvas>
+  <div id="hex"></div>
+  <script src ="script.js"></script>
+ </FORM>
+
+</main>
+  <aside class="grid_left">
+     <div class="to-do-list">
+            <h5>To-Do Tasks for the day:</h5>
+        <input id="input"/>
+        
+        <div class="paper">
+            <ul id="list"></ul></div>
+        </div>
+        <script src="script.js"></script>
+     
+  </aside>
+  <aside class="grid_right">
+    <p></p>
+  </aside>
+  <footer class="grid_footer">
+    <p>Go visit <a target="_blank" href="https://enlight.nyc">Enlight</a></p>
+    <h6> © 2020 Enlight —@tryenlight </h6>
+    <br> </br>
+  </footer>
+</div> 
+
+</body>
